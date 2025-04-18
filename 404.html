@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      //console.log(1);
+      console.log(2);
       // Extract the path from the current URL
       var path = window.location.pathname;
 
-      const base = '/test/';
-      window.location.href = base + 'index.html?redirect=' + encodeURIComponent(location.pathname);
+     js var repoBase = location.pathname.indexOf('test')&gt;-1 ? '/test' : ''; window.location.replace( repoBase + '/index.html?redirect=' + encodeURIComponent(location.pathname) );
     </script>
   </head>
   <body>
